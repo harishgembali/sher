@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+<title>courses</title>
+{% endblock title %}
+
+
+{% block body %}
+<div id="courses">
+    <h1 id="offer">Courses Offered.</h1><br><br>
+    <div class="course_video"><img src="{% static 'first.png' %}" alt="" class="course_images"></div>
+    <div class="course_video"><img src="{% static 'second.png' %}" alt="" class="course_images"></div>
+    <div class="course_video"><img src="{% static 'third.png' %}" alt="" class="course_images"></div>
+    <div class="course_video"><img src="{% static 'fourth.png' %}" alt="" class="course_images"></div>
+    <br><br>
+    <div id="video_button">
+        <button class="details_button" >view details</button>
+        <button class="details_button">view details</button>
+        <button class="details_button">view details</button>
+        <button class="details_button">view details</button>
+    </div>
+    <br><br>
+    <div class="course_video">
+        <img src="{% static 'fifth.png' %}" alt="" class="course_images">
+    </div>
+    <div id="lb_div">
+        <button id="last_button">view details</button>
+    </div>
+</div>
+{% endblock body %}

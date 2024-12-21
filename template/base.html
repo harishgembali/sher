@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title>sher</title>
+    {% endblock title %}
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="first_part"><img src="{% static 'Sheryians_logo.webp' %}" alt="" id="sher_icon"><a href="" class="links">Sheryians Coding school</a>
+            
+        </div>
+        <div id="second_part"><a href="" class="links" target="#">Home</a>
+            <a href="{% url 'sherapp:courses' %}" class="links" target="_blank">Courses</a>
+            <a href="" class="links" target="_blank">Bootcamp(Kodr)</a>
+            <a href="" class="links" target="_blank">Request Callback</a>
+            <a href="" class="links" target="_blank"><button id="signin_button">Sign In</button></a></div>
+    </nav>
+
+{% block body %}
+{% endblock body %}
+
+    <div id="footer">
+        <div class="ending_details" id="last_one">
+            <div id="inner_div">
+                <img src="{% static 'Sheryians_logo.webp' %}" alt="" id="sher_pic">
+            </div>
+            <span id="social_text">
+                Let's connect with our socials
+            </span>
+        </div>
+        <div class="ending_details" id="last_two">
+            <h1 class="ending_headings" id="heading_one">company</h1>
+            <br><br>
+            <a href="" class="last_anchor_one"><h3>About us</h3></a>
+            <br>
+            <a href="" class="last_anchor_one"><h3>support</h3></a>
+            <br>
+            <a href="" class="last_anchor_one"><h3>Privacy Policy</h3></a>
+            <br>
+            <a href="" class="last_anchor_one"><h3>Terms and Condition</h3></a>
+            <br>
+            <a href="" class="last_anchor_one"><h3>Pricing and Refund</h3></a>
+            <br>
+            <a href="" class="last_anchor_one"><h3>Hire From us</h3></a>
+            <br>
+            <a href="" class="last_anchor_one"><h3>Bug bounty</h3></a>
+        </div>
+        <div class="ending_details" id="last_three">
+            <h1>Community</h1>
+            <br><br>
+            <a href="" class="last_anchor_one"><h3>Inertia</h3></a>
+            <br>
+            <a href="" class="last_anchor_one"><h3>Discord</h3></a>
+        </div>
+        <div class="ending_details" id="last_four">
+            <h1>Get in Touch</h1>
+            <br><br>
+            <a href="" class="last_anchor_one"><h3>+918109161752</h3></a>
+            <br>
+            <a href="" class="last_anchor_one"><h3>+91 9691778470</a></h3></a>
+            <br>
+            <a href="" class="last_anchor_one"><h3>hello@sheryians.com</h3></a>
+            <br>
+            <a href="" class="last_anchor_one"><h3>23-B, Indrapuri Sector C, <br>Bhopal(MP),462021</h3></a>
+        </div>
+    </div>
+    <div id="end_divison">
+        <h3>Copyright © 2024 Sheryians Pvt. Ltd.
+            <br>
+            All Rights Reserved.
+        </h3>
+    </div>
+</body>
+</html>
